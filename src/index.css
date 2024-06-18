@@ -1,0 +1,10 @@
+html,body,#root {
+    background-color: black;
+}
+* {
+    color: #989a9b;
+}
+
+h1,h2,h3 {
+    color: white;
+}

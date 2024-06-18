@@ -1,0 +1,48 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.canvas {
+    overflow: hidden;
+    background: linear-gradient(
+            -90deg,
+            #20385b 0%,
+            #0f484f 10%
+    );
+}
+
+.canvas::before,
+.canvas::after,
+.canvas > .circles,
+.canvas > .circles::before,
+.canvas > .circles::after {
+    -webkit-filter: blur(75px);
+    filter: blur(75px);
+    will-change: filter;
+}
+
+.canvas::before,
+.canvas::after {
+    position: absolute;
+    content: "";
+    width: 390px;
+    height: 390px;
+    border-radius: 100%;
+}
+
+.canvas::before {
+    background: #263130;
+    top: -195px;
+    left: -195px;
+}
+
+.canvas::after {
+    background: #86e1ef;
+    right: -195px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
